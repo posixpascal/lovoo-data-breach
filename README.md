@@ -65,6 +65,8 @@ the following data:
    }
 ```
 
+
+
 The interesting part of this response is the fact that you can specify any location and the users distance is calculated
 by the lat/lng you speicified. In the example above you can see that the user is 4.4kilometres away from my pseudo
 location. With this data you can basically triangulate a user with no more than 7 queries to the lovoo API.
@@ -87,3 +89,22 @@ You may run this script using the lovoo.py (this is also available as a module)
 ```
 python lovoo.py
 ```
+
+This script starts with a preset location and then checks subsequent api responses in nearby locations.
+You can get even higher accuracy by providing more samples.
+
+The **geo.py#LocationMapper** does the calculation where the user currently is. The implementation is left blank intentionally
+because I don't want to encourage abuse of this API.
+
+After the script succeeded you can view the saved locations (on a per-user basis) in the **data.json** file.
+
+## Contribution
+I don't want any feature contribution
+
+## License
+License = WTFPL
+
+## Status
+Working as of 26.09.2016
+
+Submitted to golem.de on September 26th for further investigation - no response yet. :x
