@@ -105,6 +105,5 @@ I don't want any feature contribution
 License = WTFPL
 
 ## Status
-Working as of 26.09.2016
-
-Submitted to golem.de on September 26th for further investigation - no response yet. :x
+-Working as of 26.09.2016-
+Not working as of 04.10.2016
